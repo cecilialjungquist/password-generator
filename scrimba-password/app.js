@@ -5,7 +5,7 @@
 // * Each password should be 15 charachters long - check
 
 // Level up!
-// * Ability to set password length
+// * Ability to set password length - check
 // * Add "copy on click" - check
 // * Toggle symbols (and numbers) on/off - check
 
@@ -13,10 +13,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 
 let generateBtn = document.getElementById('generate-btn');
-let passwordDisplList = document.querySelectorAll('.p')
-
+let passwordDisplList = document.querySelectorAll('.p');
 let symbolsCheckbox = document.getElementById('symbols-checkbox');
 let isChecked = true;
+let helpText = document.querySelector('.help-text');
+
+
 
 symbolsCheckbox.addEventListener('change', function() {
     if (symbolsCheckbox.checked === true) {
@@ -32,7 +34,7 @@ function getRandomNumber(arrayLength) {
     return randomNumber;
 };
 
-function generatePassword() {
+function generatePassword(length) {
     let newPassword = '';
     let arrayLength = characters.length;
 
@@ -40,8 +42,8 @@ function generatePassword() {
         // Om isChecked är false, ändra arrayLength till första tecknet
         arrayLength  = characters.findIndex(element => element === "~");
     } 
-
-    for (let i = 0; i < 15; i++) {
+                    // Ändra till password length
+    for (let i = 0; i < length; i++) {
         let randomIndex = getRandomNumber(arrayLength);
         newPassword += characters[randomIndex];
     }
@@ -51,10 +53,17 @@ function generatePassword() {
 
 // Lägger upp nytt password
 generateBtn.addEventListener('click', function() {
-    passwordDisplList.forEach(display => {
-        display.textContent = generatePassword();
-        display.style.padding = '.5rem';
-    });
+
+    let passwordLength = document.getElementById('length-input').value;
+  
+    if (passwordLength < 8 || passwordLength > 16) {
+        helpText.style.display = 'block';
+    } else {
+        passwordDisplList.forEach(display => {
+            display.textContent = generatePassword(passwordLength);
+            display.style.padding = '.5rem';
+        });
+    };
 });
 
 // Kopierar password
