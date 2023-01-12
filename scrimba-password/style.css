@@ -93,6 +93,7 @@ body {
     color: rgb(210, 0, 35);
     font-weight: lighter;
     display: none;
+    max-width: 18rem;
 }
 
 .btn-hover {
@@ -163,7 +164,7 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 4rem;
-    right: 20rem;
+    left: 45rem;
     z-index: -1
 }
 .big-bubble {
@@ -174,6 +175,6 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 18rem;
-    right: 50%;
+    left: 25%;
     z-index: -1
 }

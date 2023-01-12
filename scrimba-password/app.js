@@ -59,7 +59,9 @@ generateBtn.addEventListener('click', function() {
     if (passwordLength < 8 || passwordLength > 16) {
         helpText.style.display = 'block';
     } else {
+        helpText.style.display = 'none';
         passwordDisplList.forEach(display => {
+
             display.textContent = generatePassword(passwordLength);
             display.style.padding = '.5rem';
         });
