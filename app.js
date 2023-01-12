@@ -13,7 +13,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 
 const generateBtn = document.getElementById('generate-btn');
-const passwordDisplList = document.querySelectorAll('.p');
+let passwordDisplList = document.querySelectorAll('.p');
 const symbolsCheckbox = document.getElementById('symbols-checkbox');
 let isChecked = true;
 const helpText = document.querySelector('.help-text');
