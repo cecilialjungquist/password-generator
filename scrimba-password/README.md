@@ -1,3 +1,13 @@
-# Pasword Generator
+# Password Generator
 
-From Scrimba [https://scrimba.com/learn/learnjavascript/solo-project-password-generator-cR9B46Sg]
+Task from Scrimba <a href="https://scrimba.com/learn/learnjavascript" target="_blank">Learn Javascript for free</a>.
+
+## Requirements
+* Built from "scratch"
+* Generate two random passwords when the user clicks the button
+* Each password should be 15 charachters long 
+
+### Level up!
+* Ability to set password length
+* Add "copy on click"
+* Toggle symbols (and numbers) on/off
