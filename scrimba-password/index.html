@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <article class="container">
+        <h1 class="h1">Password <span class="h1-span">Generator</span></h1>
+        <h2 class="h2">Never use an insecure password again by clicking down below!</h2>
+
+        <form>
+            <section class="form-section">
+                <input class="checkbox" type="checkbox" name="symbols" id="symbols-checkbox" checked>
+                <label for="symbols">With symbols</label>
+            </section>
+        </form>
+
+        <button class="generate-btn" id="generate-btn"><div class="btn-hover"></div> Generate passwords</button>
+        <section class="password-display">
+            <p class="p" id="password-displ-one"></p>
+            <p class="p" id="password-displ-two"></p>
+        </section>
+    </article>
+    <div class="small-bubble"></div>
+    <div class="medium-bubble"></div>
+    <div class="big-bubble"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

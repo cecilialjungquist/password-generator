@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* background-color: rgb(255, 168, 168); */
+    background:     linear-gradient(217deg, rgba(225, 100, 100, 0.8), rgba(255,0,0,0) 70.71%),
+                    linear-gradient(127deg, rgba(0, 229, 255, 0.8), rgba(0,255,0,0) 70.71%),
+                    linear-gradient(336deg, rgba(0,0,255,.8), rgba(221, 0, 255, 0.519) 70.71%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 25rem;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(161, 161, 161, 0.293);
+}
+
+.h1 {
+    font-size: 2.3rem;
+    color: rgb(64 255 242);
+}
+
+.h1-span {
+    color: white;
+}
+
+.h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.checkbox {
+    margin-right: .6rem;
+    margin-top: .6rem;
+    accent-color: hotpink;
+}
+
+label {
+    color: white;
+}
+
+.generate-btn {
+    background-color: rgb(64 255 242);
+    appearance: none;
+    border: none;
+    padding: 1.2rem;
+    border-radius: .6rem;
+    color: rgb(22, 16, 132);
+    font-size: 1.3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;    
+    transform: scale(0);
+    opacity: .8;
+}
+
+.generate-btn:hover {
+    cursor: pointer;
+}
+.generate-btn:active {
+    background-color: rgb(219, 248, 255);
+    box-shadow: none;
+}
+.generate-btn:hover .btn-hover {
+    transform: scale(1.2);
+    opacity: 0;
+    transition: 800ms;
+}
+
+.password-display {
+    border-top: 1px solid rgb(85, 84, 147);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.p {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color:  rgb(22, 16, 132);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.p:hover {
+    cursor: pointer;
+}
+.p:active {
+    background-color: rgb(219, 248, 255);
+}
+
+/* BUBBLES*/
+
+.small-bubble {
+    height: 8rem;
+    width: 8rem;
+    background-image: linear-gradient(45deg, rgba(107, 177, 193, 0.882), rgb(255, 166, 254));
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.413);
+    position: absolute;
+    top: 6rem;
+    left: 13rem;
+    z-index: -1
+}
+.medium-bubble {
+    height: 12rem;
+    width: 12rem;
+    background-image: linear-gradient(10deg, rgb(107, 132, 207), rgb(212, 123, 215));
+    box-shadow: inset 0px 0px 30px rgba(168, 205, 193, 0.401);
+    border-radius: 50%;
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1
+}
+.big-bubble {
+    height: 24rem;
+    width: 24rem;
+    background-image: linear-gradient(10deg, rgb(22, 193, 208), rgb(185, 139, 211));
+    box-shadow: inset 0px 0px 30px rgba(164, 164, 164, 0.573);
+    border-radius: 50%;
+    position: absolute;
+    top: 18rem;
+    right: 50%;
+    z-index: -1
+}
