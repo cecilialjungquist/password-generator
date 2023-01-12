@@ -9,7 +9,6 @@
 
 body {
     min-height: 100vh;
-    /* background-color: rgb(255, 168, 168); */
     background:     linear-gradient(217deg, rgba(225, 100, 100, 0.8), rgba(255,0,0,0) 70.71%),
                     linear-gradient(127deg, rgba(0, 229, 255, 0.8), rgba(0,255,0,0) 70.71%),
                     linear-gradient(336deg, rgba(0,0,255,.8), rgba(221, 0, 255, 0.519) 70.71%);
