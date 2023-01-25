@@ -3,7 +3,7 @@
 Task from Scrimba <a href="https://scrimba.com/learn/learnjavascript" target="_blank">Learn Javascript for free</a>.
 
 All HTML, CSS and JS done by me. 
-https://pw-generator-by-cecilialjungquist.netlify.app/
+<a href="https://pw-generator-by-cecilialjungquist.netlify.app/" target="_blank">Click me</a> to check it out!
 
 ## Requirements
 * Built from "scratch"
