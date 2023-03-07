@@ -2,6 +2,8 @@
 
 Task from Scrimba <a href="https://scrimba.com/learn/learnjavascript" target="_blank">Learn Javascript for free</a>.
 
+Check it out here: https://cecilialjungquist.github.io/password-generator/
+
 All HTML, CSS and JS done by me. 
 <a href="https://pw-generator-by-cecilialjungquist.netlify.app/" target="_blank">Click me</a> to check it out!
 
@@ -13,4 +15,4 @@ All HTML, CSS and JS done by me.
 ### Level up!
 * Ability to set password length
 * Add "copy on click"
-* Toggle symbols (and numbers) on/off
+* Toggle symbols on/off
